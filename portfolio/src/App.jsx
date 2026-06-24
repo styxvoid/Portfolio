@@ -1,19 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(About)
+  const [active, setActive] = useState('about')
 
   return (
-    <>
-    <Navbar active={active} onNavigate={setActive}/>
-    <main>
-      {active === 'about' && <About/>}
-      </main>
-    </>
+    <div className="min-h-screen bg-black text-white">
+      <h1 className="text-green-400 font-mono p-8">N:// Portfolio</h1>
+      <p className="text-white p-8">Tailwind funcionando ✓</p>
+    </div>
   )
 }
 
